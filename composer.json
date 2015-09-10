@@ -1,0 +1,24 @@
+{
+  "name": "tzfrs/urlextender",
+  "description": "This library extends short URLs to longURLs using HTTP-Header Location",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Theo Tzaferis",
+      "email": "theo@tzfrs.de"
+    }
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "tzfrs\\URLExtender\\" : "src/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.0",
+    "gilbitron/php-simplecache": "^1.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8.*"
+  }
+}
