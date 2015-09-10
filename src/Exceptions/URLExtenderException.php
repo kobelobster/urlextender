@@ -9,7 +9,7 @@ use Exception;
  *
  * Class URLExtenderException
  * @package tzfrs\URLExtender\Exceptions
- * @version 0.0.2
+ * @version 0.0.2.1
  * @author Theo Tzaferis <theo.tzaferis@active-value.de>
  * @licence MIT
  *
