@@ -1,5 +1,7 @@
 # URLExtender
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/61a0a09a-dcea-4169-af5c-c4c1d26fc6be/small.png)](https://insight.sensiolabs.com/projects/61a0a09a-dcea-4169-af5c-c4c1d26fc6be)
+
 This library can be used to expand short URLs such as https://t.co/XdXRudPXH5 and get the URL that is behind the short
 URL using Guzzles head method and reading the Location header
 
