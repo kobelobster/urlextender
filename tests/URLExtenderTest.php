@@ -39,4 +39,10 @@ class URLExtenderTest extends \PHPUnit_Framework_TestCase
         $this->setExpectedException(URLExtenderException::class);
         self::$urlExtender->extendURL('http://httpstat.us/404');
     }
+
+    public function testExtendURLNull()
+    {
+        $this->setExpectedException(URLExtenderException::class);
+        self::$urlExtender->extendURL(null);
+    }
 }
