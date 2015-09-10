@@ -2,7 +2,7 @@
   "name": "tzfrs/urlextender",
   "description": "This library extends short URLs to longURLs using HTTP-Header Location",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "license": "MIT",
   "authors": [
     {
       "name": "Theo Tzaferis",
