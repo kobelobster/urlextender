@@ -11,7 +11,7 @@ use tzfrs\URLExtender\Exceptions\URLExtenderException;
  *
  * Class URLExtender
  * @package tzfrs\URLExtender
- * @version 0.0.1
+ * @version 0.0.2
  * @author Theo Tzaferis <theo.tzaferis@active-value.de>
  * @licence MIT
  *
@@ -95,8 +95,11 @@ class URLExtender
      */
     public function extendURL($url)
     {
-        $cacheName = $this->getCacheName($url);
+        if (filter_var($url, FILTER_VALIDATE_URL) === false) {
+            throw new URLExtenderException('Invalid URL');
+        }
 
+        $cacheName = $this->getCacheName($url);
 
         if ($this->usingCache === true) {
             $location = $this->cache->get_cache($cacheName);
