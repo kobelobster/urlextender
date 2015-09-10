@@ -12,7 +12,7 @@ Install via [composer](https://getcomposer.org):
 ```javascript
 {
     "require": {
-        "tzfrs/urlextender": "0.0.2"
+        "tzfrs/urlextender": "0.0.2.1"
     }
 }
 ```

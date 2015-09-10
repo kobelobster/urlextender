@@ -11,7 +11,7 @@ use tzfrs\URLExtender\Exceptions\URLExtenderException;
  *
  * Class URLExtender
  * @package tzfrs\URLExtender
- * @version 0.0.2
+ * @version 0.0.2.1
  * @author Theo Tzaferis <theo.tzaferis@active-value.de>
  * @licence MIT
  *
