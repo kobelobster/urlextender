@@ -95,8 +95,11 @@ class URLExtender
      */
     public function extendURL($url)
     {
-        $cacheName = $this->getCacheName($url);
+        if (filter_var($url, FILTER_VALIDATE_URL) === false) {
+            throw new URLExtenderException('Invalid URL');
+        }
 
+        $cacheName = $this->getCacheName($url);
 
         if ($this->usingCache === true) {
             $location = $this->cache->get_cache($cacheName);
